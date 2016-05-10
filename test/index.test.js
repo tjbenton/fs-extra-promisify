@@ -2,7 +2,7 @@ import test from 'tape'
 import fs from '../'
 import path from 'path'
 const cases = path.join(__dirname, 'cases')
-
+require('es6-promise').polyfill()
 
 test('fs.access', async (t) => {
   const access = path.join(cases, 'access.js')

@@ -3,6 +3,13 @@ This is a very small wrapper around [fs-extra](https://github.com/jprichardson/n
 and additional dependencies to your package. I'm not doing anything fancy with this library just looping through the functions and converting the async functions to promise style using [es6-promisify](https://github.com/digitaldesignlabs/es6-promisify).
 
 
+## Install
+
+```bash
+npm install fs-extra-promisify --save
+```
+
+
 ## ES6/ES2015
 ```js
 import fs from 'fs-extra-promisify'
@@ -33,3 +40,14 @@ not mix them throughout the project because it can cause confusion to other deve
 Since this is such a small wrapper around another library there aren't a whole lot of tests so if you come across an
 issue feel free to create a pull request with the fixes or open an issue and I'll get it fixed as soon as I can.
 
+## Note:
+This Library doesn't include a polyfill for Promise. If your project needs to support older versions of node then you might have
+to add [es6-promise](https://github.com/stefanpenner/es6-promise) at the root of your project, or another promise pollyfill like BlueBird.
+
+```bash
+npm install es6-promise --save
+```
+
+```js
+require('es6-promise').polyfill()
+```
