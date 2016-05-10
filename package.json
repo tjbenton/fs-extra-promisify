@@ -1,6 +1,6 @@
 {
   "name": "fs-extra-promisify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "fs-extra as es6 promise",
   "main": "index.js",
   "scripts": {
