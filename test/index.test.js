@@ -34,16 +34,16 @@ test('fs.appendFile', async (t) => {
   t.end()
 })
 
-test('fs.chmod', async (t) => {
-  const chmod = path.join(cases, 'chmod.js')
-  try {
-    await fs.chmod(chmod, fs.F_OK)
-    t.pass('chmod')
-  } catch (e) {
-    t.fail('chmod')
-  }
-  t.end()
-})
+// test('fs.chmod', async (t) => {
+//   const chmod = path.join(cases, 'chmod.js')
+//   try {
+//     await fs.chmod(chmod, fs.F_OK)
+//     t.pass('chmod')
+//   } catch (e) {
+//     t.fail('chmod')
+//   }
+//   t.end()
+// })
 
 test('fs.chown', async (t) => {
   const chown = path.join(cases, 'chown.js')
